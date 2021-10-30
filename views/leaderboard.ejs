@@ -1,0 +1,459 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title> App landing</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-base.min.js"></script>
+	<!-- CSS here -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/slicknav.css">
+	<link rel="stylesheet" href="assets/css/animate.min.css">
+	<link rel="stylesheet" href="assets/css/hamburgers.min.css">
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="assets/css/themify-icons.css">
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" href="assets/css/nice-select.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	
+	<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+@font-face{
+	font-family: "noto";
+	src: url(./assets/fonts/NotoSansKR-Medium.otf);
+}
+div {font-family:"noto",noto}
+p {font-family:"noto",noto}
+h5, h1, h2, pre, h4 {font-family:"noto",noto}
+h2 {font-family:"noto",noto}
+
+
+  table {
+    width: 100%;
+	border: none;
+    /* border-collapse: collapse; */
+  }
+  th, td {
+    /* border-bottom: 1px solid #444444;
+    border-left: 1px solid #444444; */
+    padding: 10px;
+  }
+  /* th:first-child, td:first-child {
+    border-left: none;
+  } */
+
+  #first{
+	border-top: solid 2px #999;
+	border-bottom: solid 2px #999;
+	padding: 20px;
+  }
+
+  #sec_table{
+	border-top: solid 2px #999;
+	border-bottom: solid 2px #999;
+	padding: 30px;
+	text-align: center;
+  }
+
+  .gif{
+      width: 30px;
+      height: 30px;
+  }
+  #animate{
+      display: none;
+      width: 30px;
+      height: 30px;
+  }
+  #static{
+    width: 30px;
+      height: 30px;
+  }
+  .gif:hover #animate{
+      display: inline;
+  }
+  .gif:hover #static{
+      display: none;
+  }
+  #container { 
+          width: 100%; height: 500px; margin: 0; padding: 0; 
+        } 
+		::-webkit-scrollbar {
+  width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+  background: #eeeeee;
+  border-radius: 5px;
+  display: none;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: linear-gradient( #ba55d3, #64b3f4);
+  border-radius: 5px;
+}
+
+
+
+</style>
+</head>
+<body>
+	<!--? Preloader Start -->
+	<div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="assets/img/logo/loder.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area header-transparent">
+            <div class="main-header ">
+                <div class="header-bottom  header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <a href="main.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="menu-wrapper  d-flex align-items-center justify-content-end">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">                                                                                          
+                                                <li><a href="service.html">서비스 소개</a></li>
+                                                <li><a href="faq.html">FAQ</a></li>
+                                                <li><a href="#">블로그</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="http://localhost:3700/bloginfosearchblog">전체</a></li>
+                                                        <li><a href="http://localhost:3700/bloginfosearchblogdetails">수행기</a></li>
+                                                        <li><a href="http://localhost:3700/bloginfosearchblogdtechnique">기술동향</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="leaderboard.html">의뢰 결과</a></li>
+                                                
+                                                <li><a href="http://localhost:3700/mypage">마이페이지</a></li>
+                                                </form>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <!-- Header-btn -->
+                                    <div class="header-right-btn d-none d-lg-block ml-65">
+                                        <a href="project_ request.html" class="border-btn">프로젝트 의뢰</a>
+                                    </div>
+                                    <div class="header-right-btn d-none d-lg-block ml-65" style="padding-left: -50%;">
+                                        <a href="login.html" class="border-btn">로그인</a>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- Header End -->
+	</header>
+	<main>
+		<!--? slider Area Start-->
+		<section class="slider-area slider-area2">
+			<div class="slider-active">
+				<!-- Single Slider -->
+				<div class="single-slider slider-height2">
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-xl-8 col-lg-11 col-md-12">
+								<div class="hero__caption hero__caption2 text-center">
+									<h1 data-animation="bounceIn" data-delay="0.2s">의뢰 결과</h1>
+								</div>
+							</div>
+						</div>
+					</div>          
+				</div>
+			</div>
+		</section>
+		<!--? Start Sample Area -->
+		<section class="sample-text-area">
+			<div class="container box_1170">
+                
+			
+				<h1 class="text-heading">라벨링 결과 확인 및 다운로드</h1>
+                
+                <!-- <script>
+            anychart.onDocumentReady(function () {
+            var dataSet = anychart.data.set(getData());
+            
+            var firstSeriesData = dataSet.mapAs({ x: 0, value: 1 });
+            var secondSeriesData = dataSet.mapAs({ x: 0, value: 2 });
+            var thirdSeriesData = dataSet.mapAs({ x: 0, value: 3 });
+            var fourthSeriesData = dataSet.mapAs({ x: 0, value: 4 });
+            
+            var chart = anychart.line();
+			
+            chart.animation(true);
+            
+            chart.title();
+            
+            chart.yAxis().title();
+            chart.crosshair().enabled(true).yLabel(false).yStroke(null);
+            
+            var firstSeries = chart.line(firstSeriesData);
+            firstSeries
+              .name('Love-box')
+              .stroke('3 #f49595')
+              .tooltip()
+              .format("Love-box : {%value}%");
+            
+            
+            var secondSeries = chart.line(secondSeriesData);
+            secondSeries
+              .name('stone')
+              .stroke('3 #f9eb97')
+              .tooltip()
+              .format("stone : {%value}%");
+            
+            var thirdSeries = chart.line(thirdSeriesData);
+            thirdSeries
+              .name('crown')
+              .stroke('3 #a8d9f6')
+              .tooltip()
+              .format("crown : {%value}%");
+            
+            var fourthSeries = chart.line(fourthSeriesData);
+            fourthSeries
+              .name('cup')
+              .stroke('3 #e2bbfd')
+              .tooltip()
+              .format("cup : {%value}%");
+            
+            chart.legend().enabled(true);
+            
+            chart.container('container');
+            
+            // draw the line chart
+            chart.draw();
+            });
+            function getData() {
+            return [
+              ['0%',16.9,12.2,10.2,5.2],
+              ['10%',17,17.8,10,4.8],
+              ['20%',26.5,23.8,16.8,6.6],
+              ['30%',28.7,22,17.3,9.1],
+              ['40%',35.7,24,22.6,9.2],
+              ['50%',37.2,24.6,22.4,11.2],
+              ['60%',36.5,26.2,23.7,9.9],
+              ['70%',40,34.4,23.8,16.4],
+              ['80%',33.3,28.8,32.5,14.3],
+              ['90%',40.2,32.1,27.5,15.1],
+              ['100%',49.3,37.2,31.4]
+            ];
+            }
+            </script> -->
+                
+                
+				<div id="second">
+					<!-- /*  라벨링 순번, 폴더이름, 파일명, 경로, 데이터베이스 이름, 폭, 높이, 깊이,
+                    세그멘티드, 객체 명, 객체 자세, 트런케이티드, 난이도, 바운딩박스미니
+                    멈엑스, 바운딩박스맥시멈엑스, 바운딩박스미니멈와이, 바운딩박스멕시
+                    먹와이, 신청순번 */ -->
+                    <!-- 전처리 순번, 신청 순번, 데이터 세트, 측정항목, 정확도, 라벨링 진행단계 -->
+					<table id="sec_table">
+						<thead>
+						  <tr style="border-bottom: solid 2px #999">
+							<th >순번</th><th>영상 이름</th><th>탐지 객체</th><th >다운로드</th>
+						  </tr>
+						</thead>
+						<tbody id="tbody">
+                            <script>
+                                let html=""
+                                for(let i=0; i<row.length; i++){
+                                    
+                                    html+='<tr><td width="7%">'+row[i].ARTICLE_SEQ+'</td><td>'+row[i].filename+'</td><td>'+row[i].REQUIREMENTS+'</td>';
+                                    html+='<td width=10%><div class="gif" style="width:100%;"><img src="assets/img/icon/KakaoTalk_20210930_154902556.png" alt="" id="static"><img src="assets/img/icon/KakaoTalk_20210930_154902661.gif" alt="" id="animate" ></div></td></tr>'
+                                }
+                                alert(html)
+                                document.getElementById('tbody').innerHTML=html
+                            </script>
+						    <%
+                                for(var i=0; i<row.length; i++){
+                                   var data = row[i];
+
+                            %>
+                            <tr>
+                            <td><%=data.APPLY_SEQ%></td>
+                            <td><%=data.filename%></td>
+                            <td><%=data.REQUIREMENTS%></td>
+                            <td><a href="assets/artifact.zip" download><div class="gif" style="width:100%;"><img src="assets/img/icon/KakaoTalk_20210930_154902556.png" alt="" id="static"><img src="assets/img/icon/KakaoTalk_20210930_154902661.gif" alt="" id="animate" ></div></a></td>
+                            </tr>
+                         
+                            <%}%>
+						</tbody>
+					  </table>
+
+
+				</div>
+			</div>
+		</section>
+		<br>
+		<br>
+		<br>
+		<br>
+		<!-- End Sample Area -->
+		
+								<!-- Want To work End -->
+
+							</main>
+							<footer>
+								<div class="footer-wrappper section-bg" data-background="assets/img/gallery/footer-bg.png">
+									<!-- Footer Start-->
+									<div class="footer-area footer-padding">
+										<div class="container">
+											<div class="row justify-content-between">
+												<div class="col-xl-4 col-lg-5 col-md-4 col-sm-6">
+													<div class="single-footer-caption mb-50">
+														<div class="single-footer-caption mb-30">
+															<!-- logo -->
+															<div class="footer-logo mb-25">
+																<a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+															</div>
+															<div class="footer-tittle">
+																<div class="footer-pera">
+																	<p>The automated process starts as soon as your clothes go into the machine.</p>
+																</div>
+															</div>
+															<!-- social -->
+															<div class="footer-social">
+																<a href="#"><i class="fab fa-twitter"></i></a>
+																<a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-f"></i></a>
+																<a href="#"><i class="fab fa-pinterest-p"></i></a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
+													<div class="single-footer-caption mb-50">
+														<div class="footer-tittle">
+															<h4>Our solutions</h4>
+															<ul>
+																<li><a href="#">Design & creatives</a></li>
+																<li><a href="#">Telecommunication</a></li>
+																<li><a href="#">Restaurant</a></li>
+																<li><a href="#">Programing</a></li>
+																<li><a href="#">Architecture</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+													<div class="single-footer-caption mb-50">
+														<div class="footer-tittle">
+															<h4>Company</h4>
+															<ul>
+																<li><a href="#">Design & creatives</a></li>
+																<li><a href="#">Telecommunication</a></li>
+																<li><a href="#">Restaurant</a></li>
+																<li><a href="#">Programing</a></li>
+																<li><a href="#">Architecture</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+													<div class="single-footer-caption mb-50">
+														<div class="footer-tittle">
+															<h4>Support</h4>
+															<ul>
+																<li><a href="#">Design & creatives</a></li>
+																<li><a href="#">Telecommunication</a></li>
+																<li><a href="#">Restaurant</a></li>
+																<li><a href="#">Programing</a></li>
+																<li><a href="#">Architecture</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- footer-bottom area -->
+									<div class="footer-bottom-area">
+										<div class="container">
+											<div class="footer-border">
+												<div class="row d-flex align-items-center">
+													<div class="col-xl-12 ">
+														<div class="footer-copy-right text-center">
+															<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+																Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+																<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- Footer End-->
+									</div>
+								</footer>
+								<!-- Scroll Up -->
+								<div id="back-top" >
+									<a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+								</div>
+								<!-- JS here -->
+
+								<script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+								<!-- Jquery, Popper, Bootstrap -->
+								<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+								<script src="./assets/js/popper.min.js"></script>
+								<script src="./assets/js/bootstrap.min.js"></script>
+								<!-- Jquery Mobile Menu -->
+								<script src="./assets/js/jquery.slicknav.min.js"></script>
+
+								<!-- Jquery Slick , Owl-Carousel Plugins -->
+								<script src="./assets/js/owl.carousel.min.js"></script>
+								<script src="./assets/js/slick.min.js"></script>
+								<!-- One Page, Animated-HeadLin -->
+								<script src="./assets/js/wow.min.js"></script>
+								<script src="./assets/js/animated.headline.js"></script>
+								<script src="./assets/js/jquery.magnific-popup.js"></script>
+
+								<!-- Date Picker -->
+								<script src="./assets/js/gijgo.min.js"></script>
+								<!-- Nice-select, sticky -->
+								<script src="./assets/js/jquery.nice-select.min.js"></script>
+								<script src="./assets/js/jquery.sticky.js"></script>
+								
+								<!-- counter , waypoint,Hover Direction -->
+								<script src="./assets/js/jquery.counterup.min.js"></script>
+								<script src="./assets/js/waypoints.min.js"></script>
+								<script src="./assets/js/jquery.countdown.min.js"></script>
+								<script src="./assets/js/hover-direction-snake.min.js"></script>
+
+								<!-- contact js -->
+								<script src="./assets/js/contact.js"></script>
+								<script src="./assets/js/jquery.form.js"></script>
+								<script src="./assets/js/jquery.validate.min.js"></script>
+								<script src="./assets/js/mail-script.js"></script>
+								<script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+								
+								<!-- Jquery Plugins, main Jquery -->	
+								<script src="./assets/js/plugins.js"></script>
+								<script src="./assets/js/main.js"></script>
+								
+							</body>
+							</html>

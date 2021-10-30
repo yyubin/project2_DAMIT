@@ -1,0 +1,44 @@
+
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
+		@font-face {
+			font-family: "noto";
+			src: url(./assets/fonts/NotoSansKR-Medium.otf);
+		}
+
+		div {
+			font-family: "noto", noto
+		}
+
+		p {
+			font-family: "noto", noto
+		}
+
+		h5 {
+			font-family: "noto", noto
+		}
+
+		h2,
+		h1,
+		h3,
+		pre {
+			font-family: "noto", noto
+		}
+
+		.img {
+			width: 7%;
+			height: auto;
+		}
+
+		#next1,
+		#next2 {
+			width: 30px;
+			height: 30px;
+		}
+
+		.img_space {
+			width: 3%;
+			height: 30px;
+			display: inline-block;
+
+		}

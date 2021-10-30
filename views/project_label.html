@@ -1,0 +1,773 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <title> App landing</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+   <!-- CSS here -->
+   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+   <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+   <link rel="stylesheet" href="assets/css/slicknav.css">
+   <link rel="stylesheet" href="assets/css/animate.min.css">
+   <link rel="stylesheet" href="assets/css/hamburgers.min.css">
+   <link rel="stylesheet" href="assets/css/magnific-popup.css">
+   <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+   <link rel="stylesheet" href="assets/css/themify-icons.css">
+   <link rel="stylesheet" href="assets/css/slick.css">
+   <link rel="stylesheet" href="assets/css/nice-select.css">
+   <link rel="stylesheet" href="assets/css/style.css">
+   
+   <style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+@font-face{
+   font-family: "noto";
+   src: url(./assets/fonts/NotoSansKR-Medium.otf);
+}
+div {font-family:"noto",noto}
+p {font-family:"noto",noto}
+h5, h1, h2, pre, h4 {font-family:"noto",noto}
+h2 {font-family:"noto",noto}
+
+
+  table {
+    width: 100%;
+   border: none;
+    /* border-collapse: collapse; */
+  }
+  th, td {
+    /* border-bottom: 1px solid #444444;
+    border-left: 1px solid #444444; */
+    padding: 10px;
+  }
+  /* th:first-child, td:first-child {
+    border-left: none;
+  } */
+
+  #first{
+   border-top: solid 2px;
+   border-bottom: solid 2px;
+   padding: 20px;
+  }
+
+  #sec_table{
+   border-top: solid 2px;
+   border-bottom: solid 2px;
+   padding: 30px;
+   text-align: center;
+  }
+  #image{
+     border: solid 1px;
+     width: 48%;
+     float: left;
+     height: 400px;
+  }
+  #space{
+     width: 4%;
+     float: left;
+     height: 400px;
+  }
+  #cap-div{
+	  width: 550px;
+	  height: 400px;
+	  position: relative;
+	  display: inline-block;
+  }
+
+  #check-div{
+
+     text-align: right;
+     margin-right: 10px;
+  }
+  .imgs{
+     width: 100px;
+     height: 100px;
+     display: inline-block;
+     object-fit: contain;
+     
+  }
+
+ #draw-div{
+   width: 550px;
+   height: 400px;
+   position: relative;
+   float: left;
+
+   
+ }
+ #draw-canavas{
+   position:absolute;
+   right: -5px;
+   border: #000 1px solid;
+
+ }
+ .img{
+   width: 7%;
+   height: auto;
+}
+
+.img_space{
+   width : 3%;
+   height: 30px;
+   display: inline-block;
+
+}
+
+#next1,#next2{
+   width: 30px;
+   height: 30px;
+}
+
+#labeled{
+   width: 100%;
+   height: 150px;
+   overflow: hidden;
+   
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+  background: #eeeeee;
+  border-radius: 5px;
+  display: none;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: linear-gradient( #ba55d3, #64b3f4);
+  border-radius: 5px;
+}
+
+.exp {
+   position: absolute;
+   border: #ba55d3 2px solid;
+   border-radius: 10%;
+   padding: 10px;
+   display: none;
+}
+#explain_1{
+   top: 900px;
+   left: 90px;
+
+   width: 250px;
+   height: 250px;
+}
+#explain_2{
+   top: 1425px;
+   left: 90px;
+
+   width: 250px;
+   height: 150px;
+}
+#explain_3{
+   top: 1650px;
+   left: 90px;
+
+   width: 250px;
+   height: 160px;
+}
+#explain_4{
+   top: 1350px;
+   right: 90px;
+
+   width: 250px;
+   height: 180px;
+}
+#labeled canvas{
+   width: 100px;
+   height: 100px;
+}
+
+
+
+
+</style>
+<script>
+
+
+
+</script>
+
+</head>
+<body onload="show()">
+   <!--? Preloader Start -->
+   <div id="preloader-active">
+      <div class="preloader d-flex align-items-center justify-content-center">
+         <div class="preloader-inner position-relative">
+            <div class="preloader-circle"></div>
+            <div class="preloader-img pere-text">
+               <img src="assets/img/logo/loder.png" alt="">
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Preloader Start -->
+   <header>
+      <!-- Header Start -->
+      <div class="header-area header-transparent">
+         <div class="main-header ">
+            <div class="header-bottom  header-sticky">
+               <div class="container-fluid">
+                  <div class="row align-items-center">
+                     <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <a href="main.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="menu-wrapper  d-flex align-items-center justify-content-end">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">                                                                                          
+                                                <li class="active" ><a href="main.html">Home</a></li>
+                                                <li><a href="service.html">서비스 소개</a></li>
+                                                <li><a href="faq.html">FAQ</a></li>
+                                                <li><a href="#">블로그</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="blog.html">전체</a></li>
+                                                        <li><a href="blog_details.html">수행기</a></li>
+                                                        <li><a href="technique.html">기술동향</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="leaderboard.html">의뢰 결과</a></li>
+                                                <li><a href="mypage.html">마이페이지</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <!-- Header-btn -->
+                                    <div class="header-right-btn d-none d-lg-block ml-65">
+                                        <a href="project_ request.html" class="border-btn">프로젝트 의뢰</a>
+                                    </div>
+                                    
+                                </div>
+                            </div> 
+                     <!-- Mobile Menu -->
+                     <div class="col-12">
+                        <div class="mobile_menu d-block d-lg-none"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Header End -->
+   </header>
+   <main>
+      <!--? slider Area Start-->
+      <section class="slider-area slider-area2">
+         <div class="slider-active">
+            <!-- Single Slider -->
+            <div class="single-slider slider-height2">
+               <div class="container">
+                  <div class="row justify-content-center">
+                     <div class="col-xl-8 col-lg-11 col-md-12">
+                        <div class="hero__caption hero__caption2 text-center">
+                           <h1 data-animation="bounceIn" data-delay="0.2s">프로젝트 의뢰</h1>
+                        </div>
+                     </div>
+                  </div>
+               </div>          
+            </div>
+         </div>
+      </section>
+      <!--? Start Sample Area -->
+      <section class="sample-text-area">
+         <div class="container box_1170">
+            <div style="text-align: center; width: 100%; height: 100px;">
+               <img class="img" src="assets/img/icon/KakaoTalk_20210930_110139027.png" alt="">
+               <div class="img_space" >   </div>
+               <img class="img" id="next1" src="assets/img/icon/KakaoTalk_20210930_111644167.png" alt="">
+               <div class="img_space" >   </div>
+               <img class="img" src="assets/img/icon/KakaoTalk_20210930_110139148.png" alt="">
+               <div class="img_space" ></div>
+               <img class="img" id="next2" src="assets/img/icon/KakaoTalk_20210930_111644167.png" alt="">
+               <div class="img_space" ></div>
+               <img class="img" src="assets/img/icon/KakaoTalk_20210930_110138923.png" alt="">
+         </div>
+         <div >
+            <table style="width:50%; margin-right: auto; margin-left: auto; table-layout: fixed; text-align: center;">
+               <th><h5>의뢰하기</h5></th>
+               
+               <th><h5><b>대표이미지 라벨링</b></h5></th>
+               
+               <th><h5>결과 확인</h5></th>
+            </table>
+         </div>
+         <div id="explain_1" class="exp" style="text-align: right;">
+            <img src="assets/img/icon/explain.png" alt="" style="width: 50px;">
+            <pre></pre>
+            <pre>   제공해주신 동영상이 정해진 
+   프레임단위로 잘려 이미지로 
+   나열되는 공간입니다!</pre>
+            <pre>   가장 대표성을 띄고 있다고  
+   생각하시는 이미지를 클릭하여  
+   라벨링을 진행해 주세요~</pre>            
+         
+         </div>
+         <div id="explain_2" class="exp" style="text-align: right;">
+            <img src="assets/img/icon/explain.png" alt="" style="width: 50px;">
+            <pre></pre>
+            <pre>   라벨링을 진행하신 대표이미지들을
+   다시 확인하실 수 있는 공간입니다</pre>
+         </div>
+         <!-- <div id="explain_3" class="exp" style="text-align: right;">
+            <img src="assets/img/icon/explain.png" alt="" style="width: 50px;">
+            <pre></pre>
+            <pre>   앞으로 진행될 라벨링 과정에서
+   요청사항이 있으시다면 
+   구체적으로 적어주세요~</pre>   
+         </div> -->
+         <div id="explain_4" class="exp">
+            <img src="assets/img/icon/explain.png" alt="" style="width: 50px;">
+            <pre></pre>
+            <pre>대표성을 띄고있는 물체를 
+바운딩 박스로 표기한 후 
+대표이미지로 지정해주세요!
+총 10장까지 가능합니다!</pre>
+               
+         </div>
+         <script>
+            function dsp(i){
+               let explain = 'explain_'+i;
+               let elem = document.getElementById(explain);
+               elem.style.display="block";
+            }
+            function ndsp(i){
+               let explain = 'explain_'+i;
+               let elem = document.getElementById(explain);
+               elem.style.display="none";
+            }
+         </script>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+            <div>
+            <h1 class="text-heading">라벨링 진행  <img src="assets/img/icon/KakaoTalk_20211008_143633888.png" alt="" style="height: 20px;" onmouseover="dsp(1)" onmouseout="ndsp(1)"></h1>   
+            </div>
+         
+            <div id="image" style="overflow: scroll;">
+               
+
+               <script>
+                  function show(){
+                     var origin = new Array();
+                     
+
+                     html =""
+                     for(let i=1; i<10; i++){
+                        html += '<img class="imgs" src="http://localhost:3700/static2/<%=folder_name%>/test/<%=original_name%>_'+i+'.jpg" alt="" onclick="change(this.src)">';
+                        origin[i-1]='<input type="hidden" name="origin[]" value="<%=original_name%>">'
+                        
+                     }
+                     document.getElementById('image').innerHTML=html
+                     document.getElementById('values').innerHTML=origin
+                  }
+
+                  function margin(){
+                     if(json.height>json.width){
+                        let height = 550
+                        getElementById('div_img').style.margin-left((400-(json.height/(json.width/550)))/2)
+                        
+                     }else{
+                        let width = 400
+                        getElementById('div_img').style.margin-top((550-(json.width/(json.height/400)))/2)
+
+                     }
+                  }
+               </script>
+               
+               <img class="imgs" src="assets/img/blog/single_blog_1.png" alt=""  onclick="change(this.src)">
+               <img class="imgs" src="assets/img/blog/single_blog_2.png" alt="" onclick="change(this.src)">
+               <img class="imgs" src="assets/img/blog/single_blog_3.png" alt="" onclick="change(this.src)">
+               <img class="imgs" src="assets/img/blog/single_blog_4.png" alt="" onclick="change(this.src)">
+               <img class="imgs" src="assets/img/blog/single_blog_5.png" alt="" onclick="change(this.src)">
+               <img class="imgs" src="assets/img/blog/single_blog_1.png" alt=""  onclick="change(this.src)">
+               <img class="imgs" src="assets/img/blog/single_blog_1.png" alt=""  onclick="change(this.src)">
+               <img class="imgs" src="assets/img/blog/single_blog_4.png" alt="" onclick="change(this.src)">
+               <img class="imgs" src="assets/img/blog/single_blog_5.png" alt="" onclick="change(this.src)">
+               <img class="imgs" src="assets/img/blog/single_blog_1.png" alt=""  onclick="change(this.src)">
+               <img class="imgs" src="assets/img/blog/single_blog_1.png" alt=""  onclick="change(this.src)">
+               <img class="imgs" src="assets/img/blog/single_blog_4.png" alt="" onclick="change(this.src)">
+               <img class="imgs" src="assets/img/blog/single_blog_5.png" alt="" onclick="change(this.src)">
+               <img class="imgs" src="assets/img/blog/single_blog_1.png" alt=""  onclick="change(this.src)">
+               <img class="imgs" src="assets/img/blog/single_blog_1.png" alt=""  onclick="change(this.src)">
+               <img class="imgs" src="assets/img/blog/single_blog_4.png" alt="" onclick="change(this.src)">
+               <img class="imgs" src="assets/img/blog/single_blog_5.png" alt="" onclick="change(this.src)">
+               <img class="imgs" src="assets/img/blog/single_blog_1.png" alt=""  onclick="change(this.src)">
+               <img class="imgs" src="assets/img/blog/single_blog_1.png" alt=""  onclick="change(this.src)">
+               <img class="imgs" src="assets/img/blog/single_blog_4.png" alt="" onclick="change(this.src)">
+               <img class="imgs" src="assets/img/blog/single_blog_5.png" alt="" onclick="change(this.src)">
+               <img class="imgs" src="assets/img/blog/single_blog_1.png" alt=""  onclick="change(this.src)">
+               <img class="imgs" src="assets/img/blog/single_blog_1.png" alt=""  onclick="change(this.src)">
+
+
+            </div>
+            <div id="space" ></div>
+			
+			<div id="cap-div" style="background-color: white; object-fit: contain; text-align: center;">
+
+            <div id="draw-div" style="object-fit: contain; text-align: center;">
+				<img src="assets/img/gallery/white.png" alt="" id="div_img" style="object-fit: contain; max-width: 100%; max-height: 100%;">
+				</div>   
+            
+				
+				<canvas id = "draw-canavas" width="555" height="400"> </canvas>
+
+
+			</div>
+            
+            <br>
+            <div id="check-div" align="right">
+
+               <button  id="screen" onclick="cnt();" class="genric-btn primary">대표이미지 지정</button>
+            </div>
+            
+            <script>
+               function change(src_1){
+                  document.getElementById('div_img').src = `${src_1}`
+               }
+            </script>
+			
+            <br>
+            <div id="choice">
+               <h5>선택된 대표이미지  <img src="assets/img/icon/KakaoTalk_20211008_143633888.png" alt="" style="height: 20px;" onmouseover="dsp(2)"  onmouseout="ndsp(2)"></h5>
+               <div id="labeled" style="overflow-y: scroll; border: #000 solid 1px; object-fit: fill;">
+                  
+               </div>
+            </div>
+			<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+         <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+         <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+			<script>             
+                     var count = 0;
+                     var staX = "";
+                     var staY = "";
+                     var edX = "";
+                     var edY = "";
+                     var names = new Array();
+								$(function(){
+								$('#screen').click(function(){
+                           if(count>9){
+                              alert('대표이미지는 10장까지 지정할 수 있습니다!')
+                           }else{
+                              
+                              
+                              html2canvas($('#cap-div').get(0)).then(function(canvas){
+                              $(canvas).css('width',200)
+                              $(canvas).css('height',150)
+
+										document.getElementById('labeled').appendChild(canvas)
+                              
+                                
+                                 var data = canvas.toDataURL()
+                                
+                              
+                                
+                                 
+                                 $.ajax({
+                              type : 'post',
+                              url : '/saveImage',
+                              data : {"img":data,
+                           "a":"a",
+                           'stX':startX,
+                           'stY':startY,
+                           'edX':endX,
+                           'edY':endY},
+                              dataType:JSON,
+                              success : function (data) {
+
+                                 }
+        
+                              });                                         
+        
+                              });
+                              
+                           
+                                staX+='<input type="hidden" name="stX[]" value="'+startX+'">'
+                                staY+='<input type="hidden" name="stY[]" value="'+startY+'">'
+                                edX+='<input type="hidden" name="edX[]" value="'+endX+'">'
+                                edY+='<input type="hidden" name="edY[]" value="'+endY+'">'
+                                document.getElementById('values').innerHTML=staX+staY+edX+edY
+                                
+                           
+                           
+                           
+                                count++; 
+                            
+
+                           }                                 
+                             
+									   }); 
+                           
+                           
+                             
+								});
+
+                     
+			</script>
+            <br>
+            <br>
+            
+            
+         
+            <br>
+            <div style="text-align: center;">
+               <form action="project_result" method="post" >
+                  <!-- //좌표값 보내려고 폼만듬  -->
+            <!-- hidden input에 바운딩 좌표값 담음-->
+            <div id="values">
+
+            </div>
+            <input type="text" value="<%=folder_name%>" name="folder_name">
+            <!-- // 끝 y값 담음 -->
+            <input type="hidden" id = "reque" name ="reque" value= req >
+
+               
+                <input type="submit" class="genric-btn primary" value="완료">
+            </form>
+            
+            
+            <a href="project_ request" class="genric-btn primary-border">이전 단계로</a>
+            </div>
+            
+            <script> //여기가 컨버스내용
+var canvas = document. getElementById ( "draw-canavas" );
+var context = canvas. getContext ( "2d" );
+
+context.lineWidth = 3; // 컨버스에 그리는 라인의 두께 설정
+context.strokeStyle = "#006cb7"
+  var drag = false ;
+    canvas.addEventListener ( "mousedown" , function (me) {
+        mDown (me)}, false );
+   canvas.addEventListener ( "mousemove" , function (me) {
+        mMove (me)}, false );
+    canvas.addEventListener ( "mouseup" , function (me) {
+        mUp (me)}, false );
+    canvas.addEventListener ( "mouseout" , function (me) {
+        mOut (me)}, false );
+
+
+    function mMove(me)
+    {
+//drag가 false 일때는 return(return 아래는 실행 안함)
+        if (!drag)
+        {
+            return ;
+        }
+//마우스를 움직일 때마다 X좌표를 nowX에 담음
+        var nowX = me. offsetX ;
+//마우스를 움직일 때마다 Y좌표를 nowY에 담음
+        var nowY = me. offsetY ;
+//실질적으로 캔버스에 그림을 그리는 부분
+        canvasDraw (nowX,nowY);
+//마우스가 움직일때마다 X좌표를 stX에 담음
+        stX = nowX;
+//마우스가 움직일때마다 Y좌표를 stY에 담음
+        stY = nowY;
+    }
+
+ function mDown(me)
+    {
+        startX = me.offsetX;
+        startY = me.offsetY;
+        stX = me. offsetX ; //눌렀을 때 현재 마우스 X좌표를 stX에 담음
+        stY = me. offsetY ; //눌렀을 때 현재 마우스 Y좌표를 stY에 담음
+        drag = true ; //그림 그리기는 그리는 상태로 변경
+    }
+
+ function mUp(me)
+    {
+        endX = me.offsetX
+        endY = me.offsetY
+        // context.strokeRect(startX,startY,endX-startX,endY-startY)
+        drag = false ; //마우스를 떼었을 때 그리기 중지
+      
+    }
+    function mOut(me)
+    {
+        drag = false ; //마우스가 캔버스 밖으로 벗어났을 때 그리기 중지
+    }
+
+    function canvasDraw(currentX,currentY)
+    {
+     context.clearRect(0,0,context.canvas.width,context.canvas.height) //설정된 영역만큼 캔버스에서 지움
+     context.strokeRect(startX,startY,currentX-startX,currentY-startY) //시작점과 끝점의 좌표 정보로 사각형을 그려준다.
+    }
+   function myfunc()    // 좌표값 저장하는 함수
+   {
+      $('#stX').val(startX)
+      $('#stY').val(startY)
+      $('#edX').val(endX)
+      $('#edY').val(endY)
+      $('#reque').val($('textarea')[0].value)
+   }
+         </script>
+         </div>
+      </section>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <!-- End Sample Area -->
+      
+                        <!-- Want To work End -->
+
+                     </main>
+                     <footer>
+                        <div class="footer-wrappper section-bg" data-background="assets/img/gallery/footer-bg.png">
+                           <!-- Footer Start-->
+                           <div class="footer-area footer-padding">
+                              <div class="container">
+                                 <div class="row justify-content-between">
+                                    <div class="col-xl-4 col-lg-5 col-md-4 col-sm-6">
+                                       <div class="single-footer-caption mb-50">
+                                          <div class="single-footer-caption mb-30">
+                                             <!-- logo -->
+                                             <div class="footer-logo mb-25">
+                                                <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                                             </div>
+                                             <div class="footer-tittle">
+                                                <div class="footer-pera">
+                                                   <p>The automated process starts as soon as your clothes go into the machine.</p>
+                                                </div>
+                                             </div>
+                                             <!-- social -->
+                                             <div class="footer-social">
+                                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                                <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-f"></i></a>
+                                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
+                                       <div class="single-footer-caption mb-50">
+                                          <div class="footer-tittle">
+                                             <h4>Our solutions</h4>
+                                             <ul>
+                                                <li><a href="#">Design & creatives</a></li>
+                                                <li><a href="#">Telecommunication</a></li>
+                                                <li><a href="#">Restaurant</a></li>
+                                                <li><a href="#">Programing</a></li>
+                                                <li><a href="#">Architecture</a></li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                                       <div class="single-footer-caption mb-50">
+                                          <div class="footer-tittle">
+                                             <h4>Company</h4>
+                                             <ul>
+                                                <li><a href="#">Design & creatives</a></li>
+                                                <li><a href="#">Telecommunication</a></li>
+                                                <li><a href="#">Restaurant</a></li>
+                                                <li><a href="#">Programing</a></li>
+                                                <li><a href="#">Architecture</a></li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+                                       <div class="single-footer-caption mb-50">
+                                          <div class="footer-tittle">
+                                             <h4>Support</h4>
+                                             <ul>
+                                                <li><a href="#">Design & creatives</a></li>
+                                                <li><a href="#">Telecommunication</a></li>
+                                                <li><a href="#">Restaurant</a></li>
+                                                <li><a href="#">Programing</a></li>
+                                                <li><a href="#">Architecture</a></li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- footer-bottom area -->
+                           <div class="footer-bottom-area">
+                              <div class="container">
+                                 <div class="footer-border">
+                                    <div class="row d-flex align-items-center">
+                                       <div class="col-xl-12 ">
+                                          <div class="footer-copy-right text-center">
+                                             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- Footer End-->
+                           </div>
+                        </footer>
+                        <!-- Scroll Up -->
+                        <div id="back-top" >
+                           <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+                        </div>
+                        <!-- JS here -->
+
+                        <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+                        <!-- Jquery, Popper, Bootstrap -->
+                        <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+                        <script src="./assets/js/popper.min.js"></script>
+                        <script src="./assets/js/bootstrap.min.js"></script>
+                        <!-- Jquery Mobile Menu -->
+                        <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+                        <!-- Jquery Slick , Owl-Carousel Plugins -->
+                        <script src="./assets/js/owl.carousel.min.js"></script>
+                        <script src="./assets/js/slick.min.js"></script>
+                        <!-- One Page, Animated-HeadLin -->
+                        <script src="./assets/js/wow.min.js"></script>
+                        <script src="./assets/js/animated.headline.js"></script>
+                        <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+                        <!-- Date Picker -->
+                        <script src="./assets/js/gijgo.min.js"></script>
+                        <!-- Nice-select, sticky -->
+                        <script src="./assets/js/jquery.nice-select.min.js"></script>
+                        <script src="./assets/js/jquery.sticky.js"></script>
+                        
+                        <!-- counter , waypoint,Hover Direction -->
+                        <script src="./assets/js/jquery.counterup.min.js"></script>
+                        <script src="./assets/js/waypoints.min.js"></script>
+                        <script src="./assets/js/jquery.countdown.min.js"></script>
+                        <script src="./assets/js/hover-direction-snake.min.js"></script>
+
+                        <!-- contact js -->
+                        <script src="./assets/js/contact.js"></script>
+                        <script src="./assets/js/jquery.form.js"></script>
+                        <script src="./assets/js/jquery.validate.min.js"></script>
+                        <script src="./assets/js/mail-script.js"></script>
+                        <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+                        
+                        <!-- Jquery Plugins, main Jquery -->   
+                        <script src="./assets/js/plugins.js"></script>
+                        <script src="./assets/js/main.js"></script>
+                        
+                     </body>
+                     </html>

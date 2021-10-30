@@ -1,0 +1,484 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title> App landing</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+	<!-- CSS here -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/slicknav.css">
+	<link rel="stylesheet" href="assets/css/animate.min.css">
+	<link rel="stylesheet" href="assets/css/hamburgers.min.css">
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="assets/css/themify-icons.css">
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" href="assets/css/nice-select.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+	
+	<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+@font-face{
+	font-family: "noto";
+	src: url(./assets/fonts/NotoSansKR-Medium.otf);
+}
+div, h3 {font-family:"noto",noto}
+p {font-family:"noto",noto}
+h5, h1, h2, pre, h4 {font-family:"noto",noto}
+h2 {font-family:"noto",noto}
+
+
+  table {
+    width: 100%;
+	border: none;
+    /* border-collapse: collapse; */
+  }
+  th, td {
+    /* border-bottom: 1px solid #444444;
+    border-left: 1px solid #444444; */
+    padding: 10px;
+  }
+  /* th:first-child, td:first-child {
+    border-left: none;
+  } */
+
+  #first{
+	border-top: solid 2px;
+	border-bottom: solid 2px;
+	padding: 20px;
+  }
+
+  #sec_table{
+	border-top: solid 2px;
+	border-bottom: solid 2px;
+	padding: 30Spx;
+	text-align: center;
+  }
+  #image{
+	  border: solid 1px;
+	  width: 48%;
+	  float: left;
+	  height: 400px;
+  }
+  #space{
+	  width: 4%;
+	  float: left;
+	  height: 400px;
+  }
+
+  #check-div{
+
+	  text-align: right;
+	  margin-right: 10px;
+  }
+  .imgs{
+	  width: 100px;
+	  height: 100px;
+	  display: inline-block;
+	  object-fit: contain;
+
+	  transform: scale(1);
+	  -webkit-transform: scale(1);
+	  -moz-transform: scale(1);
+	  -ms-transform: scale(1);
+	  -o-transform: scale(1);
+	  transition: all 0.5s ease-in-out;
+	  
+  }
+
+  .imgs:hover{
+	transform: scale(3.1);
+	  -webkit-transform: scale(3.1);
+	  -moz-transform: scale(3.1);
+	  -ms-transform: scale(3.1);
+	  -o-transform: scale(3.1);
+	  position: relative;	  
+	z-index: 999999;
+  }
+
+ #draw-div{
+	width: 550px;
+	height: 402px;
+	position: relative;
+	float: left;
+
+	
+ }
+ #draw-canavas{
+	position:absolute;
+	top:948px;
+	left:972px;
+	
+ }
+ .img{
+	width: 7%;
+	height: auto;
+}
+
+.img_space{
+	width : 3%;
+	height: 30px;
+	display: inline-block;
+
+}
+
+#next1,#next2{
+	width: 30px;
+	height: 30px;
+}
+
+#imgs-div{
+	opacity: 0.99;
+	padding-left: 40px;
+	padding-right: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+  background: #eeeeee;
+  border-radius: 5px;
+  display: none;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: linear-gradient( #ba55d3, #64b3f4);
+  border-radius: 5px;
+}
+
+
+</style>
+<script>
+
+
+
+</script>
+
+</head>
+<body >
+	<!--? Preloader Start -->
+	<div id="preloader-active">
+		<div class="preloader d-flex align-items-center justify-content-center">
+			<div class="preloader-inner position-relative">
+				<div class="preloader-circle"></div>
+				<div class="preloader-img pere-text">
+					<img src="assets/img/logo/loder.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Preloader Start -->
+	<header>
+		<!-- Header Start -->
+		<div class="header-area header-transparent">
+			<div class="main-header ">
+				<div class="header-bottom  header-sticky">
+					<div class="container-fluid">
+						<div class="row align-items-center">
+							<!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <a href="main.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="menu-wrapper  d-flex align-items-center justify-content-end">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">                                                                                          
+                                                <li class="active" ><a href="main.html">Home</a></li>
+                                                <li><a href="service.html">서비스 소개</a></li>
+                                                <li><a href="faq.html">FAQ</a></li>
+                                                <li><a href="#">블로그</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="blog.html">전체</a></li>
+                                                        <li><a href="blog_details.html">수행기</a></li>
+                                                        <li><a href="technique.html">기술동향</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="leaderboard.html">의뢰 결과</a></li>
+                                                <li><a href="mypage.html">마이페이지</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <!-- Header-btn -->
+                                    <div class="header-right-btn d-none d-lg-block ml-65">
+                                        <a href="project_ request.html" class="border-btn">프로젝트 의뢰</a>
+                                    </div>
+                                    
+                                </div>
+                            </div> 
+							<!-- Mobile Menu -->
+							<div class="col-12">
+								<div class="mobile_menu d-block d-lg-none"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Header End -->
+	</header>
+	<main>
+		<!--? slider Area Start-->
+		<section class="slider-area slider-area2">
+			<div class="slider-active">
+				<!-- Single Slider -->
+				<div class="single-slider slider-height2">
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-xl-8 col-lg-11 col-md-12">
+								<div class="hero__caption hero__caption2 text-center">
+									<h1 data-animation="bounceIn" data-delay="0.2s">프로젝트 의뢰</h1>
+								</div>
+							</div>
+						</div>
+					</div>          
+				</div>
+			</div>
+		</section>
+		<!--? Start Sample Area -->
+		<section class="sample-text-area">
+			<div class="container box_1170">
+				<div style="text-align: center; width: 100%; height: 100px;">
+					<img class="img" src="assets/img/icon/KakaoTalk_20210930_110139027.png" alt="">
+					<div class="img_space" >   </div>
+					<img class="img" id="next1" src="assets/img/icon/KakaoTalk_20210930_111644167.png" alt="">
+					<div class="img_space" >   </div>
+					<img class="img" src="assets/img/icon/KakaoTalk_20210930_110139148.png" alt="">
+					<div class="img_space" ></div>
+					<img class="img" id="next2" src="assets/img/icon/KakaoTalk_20210930_111644167.png" alt="">
+					<div class="img_space" ></div>
+					<img class="img" src="assets/img/icon/KakaoTalk_20210930_110138923.png" alt="">
+			</div>
+			<div >
+				<table style="width:50%; margin-right: auto; margin-left: auto; table-layout: fixed; text-align: center;">
+					<th><h5>의뢰하기</h5></th>
+					
+					<th><h5>대표이미지 라벨링</h5></th>
+					
+					<th><h5><b>결과 확인</b></h5></th>
+				</table>
+			</div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<h3>의뢰하신 라벨링 산출물 입니다.</h3>
+			<br>
+			<p>라벨링이 잘못 진행된 이미지를 골라 다시 학습을 진행할 수 있습니다. 다시 라벨링하실 이미지 10장을 클릭해 주세요.</p>
+			<p>라벨링 결과가 마음에 드신다면 xml파일과 라벨링이 완료된 이미지 파일들을 다운받으실 수 있습니다.</p>
+			<br>
+
+			<div style="width: 100%; height: 100%; border: 1px solid #000; overflow: scroll;" id="imgs-div">
+				<img class="imgs" src="assets/img/blog/single_blog_1.png" alt=""  onclick="change(0)">
+				<img class="imgs" src="assets/img/blog/single_blog_2.png" alt="" onclick="change(1)">
+				<img class="imgs" src="assets/img/blog/single_blog_3.png" alt="" onclick="change(2)">
+				<img class="imgs" src="assets/img/blog/single_blog_4.png" alt="" onclick="change(3)">
+				<img class="imgs" src="assets/img/blog/single_blog_5.png" alt="" onclick="change(4)">
+				<img class="imgs" src="assets/img/blog/single_blog_1.png" alt=""  onclick="change(5)">
+				<img class="imgs" src="assets/img/blog/single_blog_1.png" alt=""  onclick="change(6)">
+				<img class="imgs" src="assets/img/blog/single_blog_4.png" alt="" onclick="change(7)">
+				<img class="imgs" src="assets/img/blog/single_blog_5.png" alt="" onclick="change(8)">
+				<img class="imgs" src="assets/img/blog/single_blog_1.png" alt=""  onclick="change(9)">
+				<img class="imgs" src="assets/img/blog/single_blog_1.png" alt=""  onclick="change(10)">
+				<img class="imgs" src="assets/img/blog/single_blog_4.png" alt="" onclick="change(11)">
+				<img class="imgs" src="assets/img/blog/single_blog_5.png" alt="" onclick="change(12)">
+				<img class="imgs" src="assets/img/blog/single_blog_1.png" alt=""  onclick="change(13)">
+
+			</div>
+
+			<script>
+				var click_cnt = 0
+				function change(num){
+					if(click_cnt<9){
+						document.getElementsByClassName('imgs')[num].style.opacity=0.5
+						click_cnt++;
+					}else{
+						alert('대표이미지 설정은 최대 10개입니다')
+					}
+					
+				}
+			</script>
+			<br>
+			<br>
+			<div align="center">
+				<a href="../uploadedFiles/1634365503564/rep.zip" download class="genric-btn primary radius">완료 및 다운로드</a>
+				<input type="submit" class="genric-btn primary radius" value="더 학습하기">
+				   </div>
+			
+			</div>
+		</section>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<!-- End Sample Area -->
+		
+								<!-- Want To work End -->
+
+							</main>
+							<footer>
+								<div class="footer-wrappper section-bg" data-background="assets/img/gallery/footer-bg.png">
+									<!-- Footer Start-->
+									<div class="footer-area footer-padding">
+										<div class="container">
+											<div class="row justify-content-between">
+												<div class="col-xl-4 col-lg-5 col-md-4 col-sm-6">
+													<div class="single-footer-caption mb-50">
+														<div class="single-footer-caption mb-30">
+															<!-- logo -->
+															<div class="footer-logo mb-25">
+																<a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+															</div>
+															<div class="footer-tittle">
+																<div class="footer-pera">
+																	<p>The automated process starts as soon as your clothes go into the machine.</p>
+																</div>
+															</div>
+															<!-- social -->
+															<div class="footer-social">
+																<a href="#"><i class="fab fa-twitter"></i></a>
+																<a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-f"></i></a>
+																<a href="#"><i class="fab fa-pinterest-p"></i></a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
+													<div class="single-footer-caption mb-50">
+														<div class="footer-tittle">
+															<h4>Our solutions</h4>
+															<ul>
+																<li><a href="#">Design & creatives</a></li>
+																<li><a href="#">Telecommunication</a></li>
+																<li><a href="#">Restaurant</a></li>
+																<li><a href="#">Programing</a></li>
+																<li><a href="#">Architecture</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+													<div class="single-footer-caption mb-50">
+														<div class="footer-tittle">
+															<h4>Company</h4>
+															<ul>
+																<li><a href="#">Design & creatives</a></li>
+																<li><a href="#">Telecommunication</a></li>
+																<li><a href="#">Restaurant</a></li>
+																<li><a href="#">Programing</a></li>
+																<li><a href="#">Architecture</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+													<div class="single-footer-caption mb-50">
+														<div class="footer-tittle">
+															<h4>Support</h4>
+															<ul>
+																<li><a href="#">Design & creatives</a></li>
+																<li><a href="#">Telecommunication</a></li>
+																<li><a href="#">Restaurant</a></li>
+																<li><a href="#">Programing</a></li>
+																<li><a href="#">Architecture</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- footer-bottom area -->
+									<div class="footer-bottom-area">
+										<div class="container">
+											<div class="footer-border">
+												<div class="row d-flex align-items-center">
+													<div class="col-xl-12 ">
+														<div class="footer-copy-right text-center">
+															<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+																Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+																<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- Footer End-->
+									</div>
+								</footer>
+								<!-- Scroll Up -->
+								<div id="back-top" >
+									<a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+								</div>
+								<!-- JS here -->
+
+								<script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+								<!-- Jquery, Popper, Bootstrap -->
+								<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+								<script src="./assets/js/popper.min.js"></script>
+								<script src="./assets/js/bootstrap.min.js"></script>
+								<!-- Jquery Mobile Menu -->
+								<script src="./assets/js/jquery.slicknav.min.js"></script>
+
+								<!-- Jquery Slick , Owl-Carousel Plugins -->
+								<script src="./assets/js/owl.carousel.min.js"></script>
+								<script src="./assets/js/slick.min.js"></script>
+								<!-- One Page, Animated-HeadLin -->
+								<script src="./assets/js/wow.min.js"></script>
+								<script src="./assets/js/animated.headline.js"></script>
+								<script src="./assets/js/jquery.magnific-popup.js"></script>
+
+								<!-- Date Picker -->
+								<script src="./assets/js/gijgo.min.js"></script>
+								<!-- Nice-select, sticky -->
+								<script src="./assets/js/jquery.nice-select.min.js"></script>
+								<script src="./assets/js/jquery.sticky.js"></script>
+								
+								<!-- counter , waypoint,Hover Direction -->
+								<script src="./assets/js/jquery.counterup.min.js"></script>
+								<script src="./assets/js/waypoints.min.js"></script>
+								<script src="./assets/js/jquery.countdown.min.js"></script>
+								<script src="./assets/js/hover-direction-snake.min.js"></script>
+
+								<!-- contact js -->
+								<script src="./assets/js/contact.js"></script>
+								<script src="./assets/js/jquery.form.js"></script>
+								<script src="./assets/js/jquery.validate.min.js"></script>
+								<script src="./assets/js/mail-script.js"></script>
+								<script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+								
+								<!-- Jquery Plugins, main Jquery -->	
+								<script src="./assets/js/plugins.js"></script>
+								<script src="./assets/js/main.js"></script>
+								
+							</body>
+							</html>
